@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+</style>
+<body>
+  <div>
+    <h1>Welcome : <%= profile.username %></h1>
+    <hr  style="margin:auto;width:40%">
+    <p>Thank you for using this shitty website.</p>
+  </div>
+  <div>
+     <button type="button" onclick="location.href='/users/stackoverflow';" value='stackoverflow'>Stackoverflow</button>
+     <button type="button">Visualization</button>
+     <button type="button">Logout</button>
+  </div>
+  <div>
+    <div>
+      <h3>Your Login Activity</h3>
+      <hr  style="margin:auto;width:40%">
+    </div>
+    <table>
+      <% for(var i= profile.loginActivity.length -1; i >=0 ; i--) { %>
+        <tr>
+          <td><%= profile.loginActivity[i] %></td>
+        </tr>
+        <% } %>
+</table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+﻿{
+    "connectionString": "mongodb://localhost/aw-assignment01",
+    "secret": "AWESOMESECRETTOSECUREMYAPP",
+    "weblink" : "https://stackoverflow.com/questions/tagged/java?sort=frequent&pageSize=15"
+}
