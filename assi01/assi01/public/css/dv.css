@@ -1,0 +1,98 @@
+
+.container-table {
+  width: 100%;
+  min-height: 76vh;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 25px;
+}
+
+.wrap-table {
+  width: 1450px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+.table {
+  background-color: #fff;
+}
+
+.column01 {
+  width: 48%;
+  padding-left: 40px;
+}
+
+.column02 {
+  width: 48%;
+}
+
+.table-body td {
+  padding-top: 2px;
+  padding-bottom: 0px;
+}
+
+/*==================================================================
+[ Fix header ]*/
+.table {
+  position: relative;
+  padding-top: 0px;
+}
+
+.table-head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.table-body {
+  max-height: 800px;
+  overflow: hidden;
+}
+
+
+/*==================================================================
+[ Ver1 ]*/
+
+.table.ver1 td {
+  font-family: Ubuntu-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.table.ver1 .table-body tr:nth-child(even) {
+  background-color: #f8f6ff;
+}
+
+/*---------------------------------------------*/
+
+.table.ver1 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.table.ver1 .ps__rail-y {
+  right: 5px;
+}
+
+.table.ver1 .ps__rail-y::before {
+  background-color: #ebebeb;
+}
+
+.table.ver1 .ps__rail-y .ps__thumb-y::before {
+  background-color: #cccccc;
+}

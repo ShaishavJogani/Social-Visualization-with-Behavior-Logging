@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adaptive Web</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/mainHome.css">
+	<link rel="stylesheet" type="text/css" href="css/navigationbar.css">
+    <link rel="stylesheet" type="text/css" href="css/dv.css">
+<!--===============================================================================================-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+<!--===============================================================================================-->
+</head>
+<body>
+    <div class="limiter">
+		<div class = "myNavigationbar">
+			<div class='nav'>
+			  <ul>
+			    <li>
+			      <a href='/dashboard'>Home</a>
+			    </li>
+			    <li>
+			      <a href='https://stackoverflow.com/questions/tagged/java?sort=frequent&pageSize=15' target="_blank">StackOverflow</a>
+			    </li>
+			    <li>
+			      <a href='/VisualizationPage'>Visualization</a>
+			    </li>
+			    <li>
+			      <a href='#Report'>Report</a>
+			    </li>
+			    <li>
+			      <a href='/logout'>Logout</a>
+			    </li>
+			  </ul>
+			</div>
+		</div>
+        <div>
+            <p>Shaishavkumar Jogani</p>
+<p>ASU ID: 1212392985</p>
+<p><a href="mailto:sjogani@asu.edu">sjogani@asu.edu</a></p>
+<p>&nbsp;</p>
+<p><strong>Why do you decide to log these actions?</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Logging user activities on site gives a deeper understanding of customers. It helps us to explore the hidden uncover pattern, trends, correlation and other information about the data. Based on those findings we can craft the rich experiences with progressive enhancement for each user. &nbsp;Considering the importance of this, I decided to log following activities of user.</p>
+<ol>
+<li><strong>Click on Question: </strong>When user clicks on any question, I stored the question text, votes/views/answers on question, tags associated with question.</li>
+<li><strong>Upvote question: </strong>On clicking the upvote button, I logged the question text, votes/views/favorites on question, tags associated with question. This log event helps us understanding the likings of the user, aid us recommending questions like given question based on tags associated with it.</li>
+<li><strong>Downvote question: </strong>On clicking the downvote button, I logged the question text, votes/views/favorites on question, tags associated with question. Unlike upvote question button, this event helps us to understand dislikes of user.</li>
+<li><strong>Favorite question: </strong>On clicking the favorite button, I logged the question text, votes/views/favorites on question, tags associated with question. Just like the upvote button, this helps us understand the likes of user. In addition, this event should be given more weightage than upvote event because by bookmarking a question, it tells us that user may want to see this question in future.</li>
+<li><strong>Un-favorite question: </strong>On clicking the Un-favorite button, I logged the question text, votes/views/favorites on question, tags associated with question. This event tells us that user is now no more interested in such questions and we can minimize the question related to this in user&rsquo;s feed.</li>
+</ol>
+<p>In addition to the above 5 user behavior, I also logged the tag click, share question, and page change events of user. These all user actions helps us to identify the likes and dislikes of user, so that we can give personalized user feedback on the website.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Analysis &amp; Findings:</strong></p>
+<p>By visualizing the collected the data, I found the following patterns:</p>
+<ol>
+<li>JAVA is the most popular technology among all user, though individual user may have different likings.</li>
+<li>Most common user reaction to any question is upvoting it(around 50%). Un-favorite the question is the least.</li>
+<li>Most users only view the question and only around 5% of them react with any activity (upvote, downvote, favorite, unfavorite) to that question.</li>
+</ol>
+<p>To find these patterns I created the Horizontal bar chart which display the question view count of top 10 popular tags for individual user and all user. On hovering of any bar, a donut chart appears which represents the user activity on that tag. In the center of a chart, statistics of that chart is displayed i.e. Tag name, views on tag, and user engagement on that tag. User engagement tells us that how active the user is to provide any feedback to any question by upvote/downvote/(un)favorite it. It is the ratio of user&rsquo;s feedback on that question and user&rsquo;s view on that question.</p>
+<p>Length of each bar chart provides the pattern of how many times a tag is being view. Proportion of each activity on donut chart explains the how much it is compared to other activities.</p>
+<p>All charts are shown for both individual user and all users. This social visualization try to progress the user induvial user behavior among the rest of the community and how it is impacting the community.</p>
+        </div>
+
+  </div>
+
+  </body>
+</html>
