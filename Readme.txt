@@ -1,5 +1,3 @@
-StackOverFlow User Behaviour Analysis submitted by Shaishavkumar Jogani(sjogani@asu.edu)
-
 Setup:
 
 Installations:
